@@ -1,10 +1,54 @@
 ---
-title: "An simple trading strategies using InfoTrie sentiment data "
+title: "A simple trading strategies using InfoTrie sentiment data "
 author: "Cheng Juan"
 date: "Monday, May 04, 2015"
 output: html_document
 ---
 
-## Excutive 
+## Executive Summary
 
 ===========================================
+
+
+
+## Introduction
+
+===========================================
+
+The sentiment information from News, Blog and Social Media is helpful for investors making investment decisions. However, it is simply too much information on the web to digest manually. FinSenS innovativly transforms the text, voice and videos into sentiment scores, which can be directly integrated into trading strategies/algorithms, risk and compliance system. In this report, we demonstrate how to use sentiment scores to build a simple stock trading strategies.
+
+## Implementation
+
+===========================================
+
+### Data Collection and Model Construction
+
+A random sample of 51 USA stocks data are collected from FinSentS portal. Each data contains  daily stock price, sentiment scores and sentiment volume and so on. The sentiment scores is in range of 0 to 10. When the sentiment score is above 5, a bullish sentiment is expressed, otherwise, a bearish sentiment. Sentiment volume provides inforamtion on the strength of sentiment score. High sentiment volume suggests a high impact of the current sentiment. According to the above analysis, we are able to classify the market sentiment into four states: bear+high, bull+high, bull+low, bear+low. A trading strategy is simply to make a trading decision according to the market sentiment status. The find one best strategy, we construct a stategy pool including 16 buy-only and 16 buy-short solutions.    
+ 
+
+### Trading Strategy Selection
+
+To select the best trading strategy in our stategy pool, we divide our dataset into training and test set. The training set is used to select the stategy and the test set is used to estimate the performance of the selected stategy.
+
+
+
+
+## TRADING STRATEGY
+
+=============================================
+
+### Predictor Characteristics
+
+
+### Strategy Implementation and performance
+
+
+
+## Future work
+
+=============================================
+
+
+
+
+
