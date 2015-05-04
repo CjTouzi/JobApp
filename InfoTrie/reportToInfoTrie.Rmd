@@ -1,0 +1,10 @@
+---
+title: "An simple trading strategies using InfoTrie sentiment data "
+author: "Cheng Juan"
+date: "Monday, May 04, 2015"
+output: html_document
+---
+
+## Excutive 
+
+===========================================
